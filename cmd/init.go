@@ -6,13 +6,16 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"os"
+	"os/exec"
 
 	"github.com/spf13/cobra"
 )
 
 const colorRed = "\033[0;31m"
 const colorNone = "\033[0m"
+const colorGreen = "\033[0;32m"
 
 var (
 	// Used for flags.
@@ -34,7 +37,18 @@ var initCmd = &cobra.Command{
 		input := name
 		switch project {
 		case "reactjs":
-			fmt.Println("You reactjs project has been created with title name of ->>", input)
+			if err := os.Mkdir(name, os.ModePerm); err != nil {
+				log.Fatal(err)
+			}
+			os.Chdir(name)
+			str, err := os.Getwd()
+			fmt.Printf("str: %T, %v\n", str, str)
+			fmt.Printf("err: %T, %v\n", err, err)
+			var repo = "git@github.com:Onboardbase/Reactjs-Starterkit.git"
+			cmd := exec.Command("git", "clone", repo, ".")
+			cmd.Run()
+			exec.Command("code", ".").Run()
+			fmt.Fprintln(os.Stdout, colorGreen, "You reactjs project has been successfully created with title name of ->>", input)
 		case "vuejs":
 			fmt.Println("You vuejs project has been created with title name of ->>", input)
 		case "flask":
