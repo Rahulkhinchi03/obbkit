@@ -10,18 +10,34 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var (
+	// Used for flags.
+	project string
+	name    string
+)
+
 // initCmd represents the init command
 var initCmd = &cobra.Command{
-	Use:   "init",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Use:     "init",
+	Short:   "The init command helps you initialize your project",
+	Long:    `The init command helps you initialize your project.`,
+	Version: "1.0.0",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("init called")
+		fmt.Printf("Enter project type: ")
+		fmt.Scan(&project)
+		fmt.Printf("Enter project name: ")
+		fmt.Scan(&name)
+		input := name
+		switch project {
+		case "reactjs":
+			fmt.Println("You reactjs project has been created with title name of ->>", input)
+		case "vuejs":
+			fmt.Println("You vuejs project has been created with title name of ->>", input)
+		case "flask":
+			fmt.Println("You flask project has been created with title name of ->>", input)
+		default:
+			fmt.Println("please enter a valid project type")
+		}
 	},
 }
 
@@ -29,7 +45,8 @@ func init() {
 	rootCmd.AddCommand(initCmd)
 
 	// Here you will define your flags and configuration settings.
-
+	//rootCmd.Flags().StringVarP(&project, "project", "p", "YOUR PROJECT", "project type (required)")
+	//rootCmd.MarkFlagRequired("project")
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
 	// initCmd.PersistentFlags().String("foo", "", "A help for foo")
