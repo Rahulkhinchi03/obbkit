@@ -20,8 +20,8 @@ var (
 // initCmd represents the init command
 var initCmd = &cobra.Command{
 	Use:     "init",
-	Short:   "The init command helps you initialize your project",
-	Long:    `The init command helps you initialize your project.`,
+	Short:   "Lists available starterkits on onboardbase.",
+	Long:    `Lists avaialable starterkits on onboardbase.`,
 	Version: "1.0.0",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("Enter project type: ")
