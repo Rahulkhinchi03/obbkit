@@ -16,9 +16,10 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "obbkit",
-	Short: "A cli tool for generating boilerplates with onboardbase configured",
-	Long:  `Obbkit helps generate your project boilerplate with onboardbase configured as the SecOps infrastructure.`,
+	Use:     "obbkit",
+	Short:   "A cli tool for generating boilerplates with onboardbase configured",
+	Long:    `Obbkit helps generate your project boilerplate with onboardbase configured as the SecOps infrastructure.`,
+	Version: "1.0.0",
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },

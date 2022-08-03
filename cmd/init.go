@@ -11,6 +11,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
+const colorRed = "\033[0;31m"
+const colorNone = "\033[0m"
+
 var (
 	// Used for flags.
 	project string
@@ -37,8 +40,6 @@ var initCmd = &cobra.Command{
 		case "flask":
 			fmt.Println("You flask project has been created with title name of ->>", input)
 		default:
-			const colorRed = "\033[0;31m"
-			const colorNone = "\033[0m"
 			fmt.Fprintln(os.Stdout, "None:", colorRed, "please enter a valid project type.")
 			fmt.Fprintln(os.Stdout, "Help:", colorNone, "Use the obbkit list command to see available project types.")
 		}
