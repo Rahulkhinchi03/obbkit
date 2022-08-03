@@ -6,6 +6,7 @@ package cmd
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/spf13/cobra"
 )
@@ -36,7 +37,10 @@ var initCmd = &cobra.Command{
 		case "flask":
 			fmt.Println("You flask project has been created with title name of ->>", input)
 		default:
-			fmt.Println("please enter a valid project type")
+			const colorRed = "\033[0;31m"
+			const colorNone = "\033[0m"
+			fmt.Fprintln(os.Stdout, "None:", colorRed, "please enter a valid project type.")
+			fmt.Fprintln(os.Stdout, "Help:", colorNone, "Use the obbkit list command to see available project types.")
 		}
 	},
 }
