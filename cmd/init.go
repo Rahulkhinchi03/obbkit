@@ -37,22 +37,22 @@ var initCmd = &cobra.Command{
 		input := name
 		switch project {
 		case "reactjs":
+			var repo = "git@github.com:Onboardbase/Reactjs-Starterkit.git"
 			if err := os.Mkdir(name, os.ModePerm); err != nil {
 				log.Fatal(err)
 			}
 			os.Chdir(name)
 			str, err := os.Getwd()
-			fmt.Printf("str: %T, %v\n", str, str)
-			fmt.Printf("err: %T, %v\n", err, err)
-			var repo = "git@github.com:Onboardbase/Reactjs-Starterkit.git"
+			fmt.Printf("Project Directory: %v\n", str)
+			fmt.Printf("Possible error: %v\n", err)
 			cmd := exec.Command("git", "clone", repo, ".")
 			cmd.Run()
 			exec.Command("code", ".").Run()
-			fmt.Fprintln(os.Stdout, colorGreen, "You reactjs project has been successfully created with title name of ->>", input)
+			fmt.Fprintln(os.Stdout, colorGreen, "Your reactjs project has been successfully created with title name of ->>", input)
 		case "vuejs":
-			fmt.Println("You vuejs project has been created with title name of ->>", input)
+			fmt.Println("Your vuejs project has been created with title name of ->>", input)
 		case "flask":
-			fmt.Println("You flask project has been created with title name of ->>", input)
+			fmt.Println("Your flask project has been created with title name of ->>", input)
 		default:
 			fmt.Fprintln(os.Stdout, "None:", colorRed, "please enter a valid project type.")
 			fmt.Fprintln(os.Stdout, "Help:", colorNone, "Use the obbkit list command to see available project types.")
