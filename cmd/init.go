@@ -30,19 +30,26 @@ func utilsCall(repo, name, colorGreen, input string) {
 	if err := os.Mkdir(name, os.ModePerm); err != nil {
 		log.Fatal(err)
 	}
-	os.Chdir(name)
-	str, err := os.Getwd()
-	fmt.Printf("Project Directory: %v\n", str)
-	fmt.Printf("Possible error: %v\n", err)
+	if err := os.Chdir(name); err != nil {
+		log.Fatal(err)
+	}
+	if str, err := os.Getwd(); err != nil {
+		log.Fatal(err)
+	} else {
+		fmt.Printf("Project Directory: %v\n", str)
+	}
 	bar := progressbar.Default(100, "Creating project")
 	for i := 0; i < 100; i++ {
 		bar.Add(1)
 		time.Sleep(40 * time.Millisecond)
 	}
-	cmd := exec.Command("git", "clone", repo, ".")
-	cmd.Run()
-	exec.Command("code", ".").Run()
-	fmt.Fprintln(os.Stdout, colorGreen, "Your project has been successfully created with title name of ->>", input)
+	if err := exec.Command("git", "clone", repo, ".").Run(); err != nil {
+		log.Fatal(err)
+	}
+	if err := exec.Command("code", ".").Run(); err != nil {
+		log.Fatal(err)
+	}
+	fmt.Fprintln(os.Stdout, colorGreen, "Your project has been successfully...........")
 }
 
 // initCmd represents the init command
