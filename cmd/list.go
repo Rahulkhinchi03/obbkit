@@ -34,7 +34,7 @@ var listCmd = &cobra.Command{
 	Long:  `List all available project types that onboardbase provides.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println(`
-This are the list of available project types(starterkits) that onbaordbase provides.
+This are the list of available project types(starterkits) that onboardbase provides.
 
 1. reactjs
 2. vuejs
