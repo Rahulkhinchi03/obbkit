@@ -6,8 +6,12 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"os"
+	"os/exec"
+	"time"
 
+	"github.com/schollz/progressbar/v3"
 	"github.com/spf13/cobra"
 )
 
@@ -20,6 +24,26 @@ var (
 	project string
 	name    string
 )
+
+// main logic
+func utilsCall(repo, name, colorGreen, input string) {
+	if err := os.Mkdir(name, os.ModePerm); err != nil {
+		log.Fatal(err)
+	}
+	os.Chdir(name)
+	str, err := os.Getwd()
+	fmt.Printf("Project Directory: %v\n", str)
+	fmt.Printf("Possible error: %v\n", err)
+	bar := progressbar.Default(100, "Creating project")
+	for i := 0; i < 100; i++ {
+		bar.Add(1)
+		time.Sleep(40 * time.Millisecond)
+	}
+	cmd := exec.Command("git", "clone", repo, ".")
+	cmd.Run()
+	exec.Command("code", ".").Run()
+	fmt.Fprintln(os.Stdout, colorGreen, "Your project has been successfully created with title name of ->>", input)
+}
 
 // initCmd represents the init command
 var initCmd = &cobra.Command{
@@ -36,13 +60,22 @@ var initCmd = &cobra.Command{
 		switch project {
 		case "reactjs":
 			var repo = "git@github.com:Onboardbase/Reactjs-Starterkit.git"
-			utils.utilsCall(repo, name, colorGreen, input)
+			utilsCall(repo, name, colorGreen, input)
 		case "vuejs":
 			var repo = "git@github.com:Onboardbase/Vuejs-Starterkit.git"
-			utils.utilsCall(repo, name, colorGreen, input)
+			utilsCall(repo, name, colorGreen, input)
 		case "flask":
 			var repo = "git@github.com:Onboardbase/Flask-Starterkit.git"
-			utils.utilsCall(repo, name, colorGreen, input)
+			utilsCall(repo, name, colorGreen, input)
+		case "nextjs":
+			var repo = "git@github.com:Onboardbase/nextjs-starterkit.git"
+			utilsCall(repo, name, colorGreen, input)
+		case "nuxtjs":
+			var repo = "git@github.com:Onboardbase/nuxtjs-starterkit.git"
+			utilsCall(repo, name, colorGreen, input)
+		case "gatsby":
+			var repo = "git@github.com:Onboardbase/gatsby-starterkit.git"
+			utilsCall(repo, name, colorGreen, input)
 		default:
 			fmt.Fprintln(os.Stdout, "None:", colorRed, "please enter a valid project type.")
 			fmt.Fprintln(os.Stdout, "Help:", colorNone, "Use the obbkit list command to see available project types.")

@@ -29,6 +29,7 @@ This are the list of available project types(starterkits) that onbaordbase provi
 3. flask
 4. nextjs
 5. nuxtjs
+6. gatsby
 		`)
 	},
 }
