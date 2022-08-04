@@ -18,5 +18,5 @@ func utilsCall(repo, name, colorGreen, input string) {
 	cmd := exec.Command("git", "clone", repo, ".")
 	cmd.Run()
 	exec.Command("code", ".").Run()
-	fmt.Fprintln(os.Stdout, colorGreen, "Your reactjs project has been successfully created with title name of ->>", input)
+	fmt.Fprintln(os.Stdout, colorGreen, "Your project has been successfully created with title name of ->>", input)
 }
