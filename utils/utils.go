@@ -7,8 +7,7 @@ import (
 	"os/exec"
 )
 
-func main() {
-	var repo = "git@github.com:Onboardbase/Reactjs-Starterkit.git"
+func utilsCall(repo, name, colorGreen, input string) {
 	if err := os.Mkdir(name, os.ModePerm); err != nil {
 		log.Fatal(err)
 	}
