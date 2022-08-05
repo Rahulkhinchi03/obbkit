@@ -4,7 +4,7 @@ obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured 
 
 # Installation
 
-### Install via Go (package manager)
+### Go (package manager)
  
 Install
  
