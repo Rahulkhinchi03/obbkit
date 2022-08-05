@@ -55,14 +55,14 @@ List all available project types that onboardbase provides.
 
 # Flags 
 
-###  -h, --help      
+###  `-h, --help`      
 
 help for obbkit
-###  -t, --toggle    
+###  `-t, --toggle`    
 
 Help message for toggle
 
-###  -v, --version   
+###  `-v, --version`   
 
 version for obbkit  
 
