@@ -9,11 +9,7 @@ obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured 
 Install
  
 ```
-go install 
-```
-
-Uninstall
-```
+go install github.com/AdeboyeDN/obbkit@latest
 ```
 
 ### macOS
@@ -42,16 +38,38 @@ brew remove obbkit
 ```
 obbkit --version
 ```
-
-
-# Concept 
-
-# Usage
-
 # Commands 
+
+### completion  
+
+Generate the autocompletion script for the specified shell
+### help        
+
+Help about any command
+### init        
+
+Lists available starterkits on onboardbase.
+### list        
+
+List all available project types that onboardbase provides.
 
 # Flags 
 
+###  -h, --help      
+
+help for obbkit
+###  -t, --toggle    
+
+Help message for toggle
+
+###  -v, --version   
+
+version for obbkit  
+
 # Contribute 
 
+Will be updated soon 
+
 # License
+
+obbkit is released under MIT license. See (LICENSE.txt)[https://github.com/AdeboyeDN/obbkit/blob/main/LICENSE]
