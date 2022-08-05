@@ -11,7 +11,7 @@ A cli tool for generating boilerplates with onboardbase configured
 
 # Flags 
 
-# Insstallation 
+# Installation 
 
 # Contribute 
 
