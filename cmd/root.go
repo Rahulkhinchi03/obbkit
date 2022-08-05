@@ -30,8 +30,8 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:     "obbkit",
-	Short:   "A cli tool for generating boilerplates with onboardbase configured",
-	Long:    `A cli tool for generating boilerplates with onboardbase configured`,
+	Short:   "A cli tool for generating boilerplates with onboardbase configured.",
+	Long:    `A cli tool for generating boilerplates with onboardbase configured.`,
 	Version: "0.0.2",
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
