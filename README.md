@@ -40,16 +40,16 @@ obbkit --version
 ```
 # Commands 
 
-### completion  
+### `obbkit completion`  
 
 Generate the autocompletion script for the specified shell
-### help        
+### `obbkit help`        
 
 Help about any command
-### init        
+### `obbkit init`        
 
 Lists available starterkits on onboardbase.
-### list        
+### `obbkit list`        
 
 List all available project types that onboardbase provides.
 
@@ -72,4 +72,4 @@ Will be updated soon
 
 # License
 
-obbkit is released under MIT license. See (LICENSE.txt)[https://github.com/AdeboyeDN/obbkit/blob/main/LICENSE]
+obbkit is released under MIT license. See [LICENSE.txt](https://github.com/AdeboyeDN/obbkit/blob/main/LICENSE)
