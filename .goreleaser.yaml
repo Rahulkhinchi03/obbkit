@@ -35,10 +35,10 @@ universal_binaries:
 brews:
   -
    name: obbkit
-   homepage: https://github.com/AdeboyeDN/obbkit
+   homepage: https://github.com/Onboardbase/obbkit
    tap:
-    owner: AdeboyeDN
-    name: homebrew-adeboyedn
+    owner: Onboardbase
+    name: homebrew-obbkit
    commit_author:
     name: AdeboyeDN
     email: adeboyed93@gmail.com
