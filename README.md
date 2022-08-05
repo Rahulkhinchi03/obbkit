@@ -9,7 +9,7 @@ obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured 
 Install
  
 ```
-go install github.com/AdeboyeDN/obbkit@latest
+go install github.com/onboardbase/obbkit@latest
 ```
 
 ### macOS
@@ -17,8 +17,8 @@ go install github.com/AdeboyeDN/obbkit@latest
 Install
 
 ```
-$ brew tap adeboyedn/obbkit
-$ brew install  adeboyedn/obbkit/obbkit
+$ brew tap onboardbase/obbkit
+$ brew install  onboardbase/obbkit/obbkit
 ```
 
 Update
