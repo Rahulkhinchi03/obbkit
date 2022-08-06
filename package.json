@@ -1,6 +1,6 @@
 {
   "name": "obbkit",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A CLI tool for generating boilerplates with onboardbase preconfigured in them as a SecOps infrastructure. ",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Onboardbase/obbkit#readme",
   "dependencies": {
-    "obbkit": "^0.0.1",
+    "obbkit": "^0.0.4",
     "global": "^4.4.0",
     "go-npm": "^0.1.9"
   },
