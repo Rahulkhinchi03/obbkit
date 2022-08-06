@@ -16,3 +16,8 @@
 
 dist/
 *.vscode
+*.me.txt
+
+#dependencies
+*node_modules
+
