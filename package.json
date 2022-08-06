@@ -1,6 +1,6 @@
 {
   "name": "obbkit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A CLI tool for generating boilerplates with onboardbase preconfigured in them as a SecOps infrastructure. ",
   "main": "index.js",
   "scripts": {
