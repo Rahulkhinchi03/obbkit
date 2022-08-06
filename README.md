@@ -1,6 +1,6 @@
 # Overview
 
-obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured in them as a SecOps infrastucture.
+obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured in them as a SecretOps infrastucture.
 
 # Usage
 We would be creating a reactjs project that has onboardbase preconfigured.
@@ -34,7 +34,7 @@ Install
 
 ```
 $ brew tap onboardbase/obbkit
-$ brew install  onboardbase/obbkit/obbkit
+$ brew install onboardbase/obbkit/obbkit
 ```
 
 Update
@@ -56,30 +56,27 @@ obbkit --version
 ```
 # Commands 
 
-### `obbkit completion` (coming soon)
+### `obbkit autocomplete` (coming soon)
+Autocompletion to easily find starterkits and commands
 
-Generate the autocompletion script for the specified shell
 ### `obbkit help`        
-
 Help about any command
+
 ### `obbkit init`        
-
 Lists available starterkits on onboardbase.
-### `obbkit list`        
 
+### `obbkit list`        
 List all available project types that onboardbase provides.
 
 # Flags 
 
 ###  `-h, --help`      
-
 help for obbkit
-###  `-t, --toggle`    
 
+###  `-t, --toggle`    
 Help message for toggle
 
 ###  `-v, --version`   
-
 version for obbkit  
 
 # Contribute 
@@ -88,4 +85,4 @@ Will be updated soon
 
 # License
 
-obbkit is released under MIT license. See [LICENSE.txt](https://github.com/AdeboyeDN/obbkit/blob/main/LICENSE)
+obbkit is released under MIT license. See [LICENSE.txt](https://github.com/Onboardbase/obbkit/main/LICENSE)
