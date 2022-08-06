@@ -22,6 +22,11 @@ Install
 ```
 go install github.com/onboardbase/obbkit@latest
 ```
+### npm (package manager)
+
+```
+npm i -g obbkit
+```
 
 ### macOS
 
