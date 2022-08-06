@@ -5,7 +5,7 @@ obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured 
 # Usage
 We would be creating a reactjs project that has onboardbase preconfigured.
 
-![image](https://user-images.githubusercontent.com/65312338/183157733-317a64c4-ea5a-4667-99fc-08ab1a68ea8a.png)
+![image](https://user-images.githubusercontent.com/65312338/183244277-d032a954-c369-4f34-9da2-b5b8682bf48c.png)
 
 It automatically opens the created project in vscode.
 
