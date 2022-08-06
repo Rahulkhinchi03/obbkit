@@ -15,14 +15,14 @@ You can start building 😍😍
 
 # Installation
 
-### Go (package manager)
+### Go
  
 Install
  
 ```
 go install github.com/onboardbase/obbkit@latest
 ```
-### npm (package manager)
+### npm (coming soon)
 
 ```
 npm i -g obbkit
