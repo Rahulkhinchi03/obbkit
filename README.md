@@ -51,7 +51,7 @@ obbkit --version
 ```
 # Commands 
 
-### `obbkit completion`  
+### `obbkit completion` (coming soon)
 
 Generate the autocompletion script for the specified shell
 ### `obbkit help`        
