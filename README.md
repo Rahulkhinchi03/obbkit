@@ -2,6 +2,17 @@
 
 obbkit is a CLI tool for generating boilerplates with onboardbase preconfigured in them as a SecOps infrastucture.
 
+# Usage
+We would be creating a reactjs project that has onboardbase preconfigured.
+
+![image](https://user-images.githubusercontent.com/65312338/183157733-317a64c4-ea5a-4667-99fc-08ab1a68ea8a.png)
+
+It automatically opens the created project in vscode.
+
+![image](https://user-images.githubusercontent.com/65312338/183157684-25896db5-9d7e-40b5-881e-fec3edd349d8.png)
+
+You can start building 😍😍
+
 # Installation
 
 ### Go (package manager)
@@ -40,7 +51,7 @@ obbkit --version
 ```
 # Commands 
 
-### `obbkit completion`  
+### `obbkit completion` (coming soon)
 
 Generate the autocompletion script for the specified shell
 ### `obbkit help`        
