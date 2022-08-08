@@ -56,9 +56,6 @@ obbkit --version
 ```
 # Commands 
 
-### `obbkit autocomplete` (coming soon)
-Autocompletion to easily find starterkits and commands
-
 ### `obbkit help`        
 Help about any command
 
