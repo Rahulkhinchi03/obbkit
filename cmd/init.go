@@ -66,7 +66,7 @@ func utilsCall(repo, name, colorGreen, input string) {
 	if err := exec.Command("code", ".").Run(); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Fprintln(os.Stdout, colorGreen, "Your project has been successfully...........")
+	fmt.Fprintln(os.Stdout, colorGreen, "Your project has been created successfully...........")
 }
 
 // initCmd represents the init command
