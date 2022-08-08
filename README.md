@@ -34,7 +34,7 @@ Install
 
 ```
 $ brew tap onboardbase/obbkit
-$ brew install onboardbase/obbkit/obbkit
+$ brew install onboardbase/obbkit
 ```
 
 Update
