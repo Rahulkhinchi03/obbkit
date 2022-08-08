@@ -9,7 +9,7 @@ We would be creating a reactjs project that has onboardbase preconfigured.
 
 It automatically opens the created project in vscode.
 
-![image](https://user-images.githubusercontent.com/65312338/183157684-25896db5-9d7e-40b5-881e-fec3edd349d8.png)
+![image](https://user-images.githubusercontent.com/65312338/183387559-7c19ada9-2164-4f16-9a47-651a1ebfde70.png)
 
 You can start building 😍😍
 
