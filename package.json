@@ -27,7 +27,7 @@
   },
   "goBinary": {
     "name": "obbkit",
-    "path": "",
+    "path": "./bin",
     "url": "https://github.com/Onboardbase/obbkit/releases/download/v{{version}}/obbkit_{{version}}_{{platform}}_{{arch}}.tar.gz"
   }
 }
