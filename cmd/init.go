@@ -32,9 +32,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
-const colorRed = "\033[0;31m"
-const colorNone = "\033[0m"
-const colorGreen = "\033[0;32m"
+const (
+	colorRed   = "\033[0;31m"
+	colorNone  = "\033[0m"
+	colorGreen = "\033[0;32m"
+)
 
 var (
 	// Used for flags.
@@ -82,22 +84,22 @@ var initCmd = &cobra.Command{
 		fmt.Scan(&name)
 		input := name
 		switch project {
-		case "reactjs":
+		case "reactjs", "Reactjs", "REACTJS":
 			var repo = "git@github.com:Onboardbase/Reactjs-Starterkit.git"
 			utilsCall(repo, name, colorGreen, input)
-		case "vuejs":
+		case "vuejs", "Vuejs", "VUEJS":
 			var repo = "git@github.com:Onboardbase/Vuejs-Starterkit.git"
 			utilsCall(repo, name, colorGreen, input)
-		case "flask":
+		case "flask", "Flask", "FLASK":
 			var repo = "git@github.com:Onboardbase/Flask-Starterkit.git"
 			utilsCall(repo, name, colorGreen, input)
-		case "nextjs":
+		case "nextjs", "Nextjs", "NEXTJS":
 			var repo = "git@github.com:Onboardbase/nextjs-starterkit.git"
 			utilsCall(repo, name, colorGreen, input)
-		case "nuxtjs":
+		case "nuxtjs", "Nuxtjs", "NUXTJS":
 			var repo = "git@github.com:Onboardbase/nuxtjs-starterkit.git"
 			utilsCall(repo, name, colorGreen, input)
-		case "gatsby":
+		case "gatsby", "Gatsby", "GATSBY":
 			var repo = "git@github.com:Onboardbase/gatsby-starterkit.git"
 			utilsCall(repo, name, colorGreen, input)
 		default:

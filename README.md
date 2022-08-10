@@ -82,4 +82,4 @@ Will be updated soon
 
 # License
 
-obbkit is released under MIT license. See [LICENSE.txt](https://github.com/Onboardbase/obbkit/main/LICENSE)
+obbkit is released under MIT license. See [LICENSE.txt](https://github.com/Onboardbase/obbkit/blob/main/LICENSE)
