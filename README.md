@@ -60,7 +60,7 @@ obbkit --version
 Help about any command
 
 ### `obbkit init`        
-Lists available starterkits on onboardbase.
+Initialize or create your project
 
 ### `obbkit list`        
 List all available project types that onboardbase provides.
