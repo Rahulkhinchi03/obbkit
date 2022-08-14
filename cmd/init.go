@@ -74,8 +74,8 @@ func utilsCall(repo, name, colorGreen, input string) {
 // initCmd represents the init command
 var initCmd = &cobra.Command{
 	Use:     "init",
-	Short:   "Lists available starterkits on onboardbase.",
-	Long:    `Lists avaialable starterkits on onboardbase.`,
+	Short:   "Initialize or create your project.",
+	Long:    `Initialize or create your project.`,
 	Version: "1.0.0",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("Enter project type: ")
