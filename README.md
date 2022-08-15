@@ -70,16 +70,27 @@ List all available project types that onboardbase provides.
 ###  `-h, --help`      
 help for obbkit
 
-###  `-t, --toggle`    
-Help message for toggle
-
 ###  `-v, --version`   
 version for obbkit  
 
 # Contribute 
 
-Will be updated soon 
+## Requirements
 
+* Go >= 0.18
+
+## Clone Repository
+
+```sh
+git clone <repo>
+```
+
+After setting up obbkit run the command below to test the project
+
+```sh
+$ go build
+$ go install
+```
 # License
 
 obbkit is released under MIT license. See [LICENSE.txt](https://github.com/Onboardbase/obbkit/blob/main/LICENSE)
