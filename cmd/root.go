@@ -32,7 +32,7 @@ var rootCmd = &cobra.Command{
 	Use:     "obbkit",
 	Short:   "A cli tool for generating boilerplates with onboardbase configured.",
 	Long:    `A cli tool for generating boilerplates with onboardbase configured.`,
-	Version: "0.7.0",
+	Version: "0.8.0",
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
