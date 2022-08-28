@@ -20,7 +20,7 @@ You can start building 😍😍
 Install
  
 ```
-go install github.com/onboardbase/obbkit@latest
+go install github.com/onboardbase/obbkit@v0.8.0
 ```
 ### npm (coming soon)
 
