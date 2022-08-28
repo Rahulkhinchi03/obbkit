@@ -1,4 +1,4 @@
-module github.com/Onboardbase/obbkit
+module github.com/onboardbase/obbkit
 
 go 1.19
 
