@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "github.com/AdeboyeDN/obbkit/cmd"
+import "github.com/Onboardbase/obbkit/cmd"
 
 func main() {
 	cmd.Execute()

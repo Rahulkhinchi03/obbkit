@@ -1,4 +1,4 @@
-module github.com/AdeboyeDN/obbkit
+module github.com/Onboardbase/obbkit
 
 go 1.18
 
